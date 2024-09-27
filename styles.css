@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    line-height: 1.2;
+}
+
+.navbar img {
+    margin-right: 10px;
+}
+
+.navbar p {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 13px;
+    color: grey;
+    font-style: normal;
+}
+
+/* Black Line Under Navbar */
+header {
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+/* Categories Section Styling */
+.categories ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+    font-style: normal;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+/* Styling for All Repos Container */
+ul.all-repos {
+    margin: 0 auto; /* Center the container */
+    padding: 0;
+    list-style: none;
+    display: grid; /* Use grid layout for better alignment */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between boxes */
+    border-left: 1px solid #ccc; /* Left border */
+    border-right: 1px solid #ccc; /* Right border */
+    padding: 0 10px; /* Padding on sides to create space */
+}
+
+/* General Repo Item Styling */
+.all-repos > div {
+    padding: 10px; /* Increased padding for a better appearance */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack details vertically */
+    justify-content: flex-start; /* Align items to the top */
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 13px;
+    color: black;
+    border: 1px solid #ccc; /* Border for clarity */
+    border-top: 2px solid #ccc; /* Top border added */
+    background-color: white; /* Background color for the boxes */
+    border-radius: 5px; /* Rounded corners for the boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Repo Name Link Styling */
+.all-repos a.Name {
+    text-decoration: underline;
+    color: grey;
+    font-weight: 400;
+}
+
+/* Description and other details styling */
+.all-repos .description,
+.all-repos .Owner,
+.all-repos .Last-Commit {
+    margin: 0; /* Remove default margin for tight spacing */
+    padding: 2px 0; /* Add slight padding for clarity */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items on smaller screens */
+        align-items: flex-start;
+    }
+
+    .categories ul {
+        flex-direction: column; /* Stack categories vertically on small screens */
+    }
+
+    .all-repos {
+        flex-direction: column; /* Stack repos vertically on small screens */
+    }
+
+    .all-repos > div {
+        align-items: flex-start; /* Align items to the start on small screens */
+    }
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
